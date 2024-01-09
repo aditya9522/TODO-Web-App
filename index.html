@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <div class="main-div">
+        <div class="main-head">
+            <div class="left-head">📝     TODO APP</div>   <!--Invisible character  Alt-255 -->
+            <div class="right-head">
+                <div class="share-img" onclick="copyURL()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxX952jis_M82lcoYRcv21DK7UNnZ24-8lkw&usqp=CAU" alt="share-icon"></div>
+                <button type="button"><a href="https://aditya9522.github.io/Portfolio-Website/">Feedback</a></button>
+            </div>
+        </div>
+        <div class="copy-url">Copied url</div>
+        <hr color="white" size="2">
+        <div class="input-container">
+            <input type="text" name="todo" id="todo-input" placeholder="What to do next?">
+            <input type="date" name="date" id="date-input">
+            <button type="button" id="add-button" onclick="addItem()">Add</button>
+        </div>
+        <div class="added-success">
+            <div class="success-icon">✓</div>
+            <h1>Todo added successfully</h1>
+        </div>
+        <div class="todo-list input-container"></div>
+        <div class="popup">
+            <div class="close-popup" onclick="removePopUp()">✕</div>
+            <div class="head-pic">🤖</div>
+            <h1>Welcome</h1>
+            <P>Great to have you, Let's start managing your daily tasks click on button to continue</P>
+            <hr color="green" size="2" width="40%" style="margin: 40px auto 50px;">
+            <button type="button" onclick="removePopUp()">Continue</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- https://www.remotehub.com/portfolios/details/todo-app-5ea14b61edae3a0d6454d542 -->
